@@ -166,7 +166,7 @@ function ProjectLogo({ project }: ProjectCardProps) {
   const showImage = project.logo && !logoError
 
   return (
-    <LogoSlot title={project.logo ? `Logo: ${project.logo}` : 'Add a logo in public/projects/'}>
+    <LogoSlot title={project.logo ? `${project.title} logo` : 'Add logo to src/assets/'}>
       {showImage ? (
         <LogoImage
           src={project.logo}

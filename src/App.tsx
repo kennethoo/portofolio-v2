@@ -5,6 +5,7 @@ import { Footer } from './components/layout/Footer'
 import { Hero } from './components/sections/Hero'
 import { About } from './components/sections/About'
 import { Projects } from './components/sections/Projects'
+import { PathVisualizer } from './components/sections/PathVisualizer/PathVisualizer'
 import { GlobalStyles } from './styles/GlobalStyles'
 import { theme } from './styles/theme'
 
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <About />
         <Projects />
+        <PathVisualizer />
       </main>
       <Footer />
     </ThemeProvider>

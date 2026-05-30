@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { portfolio } from '../../data/portfolio'
+import { siteLogo } from '../../assets/siteLogo'
 import { StatusBadge } from '../ui/StatusBadge'
 
 const Nav = styled.header<{ $scrolled: boolean }>`
@@ -22,10 +23,22 @@ const Nav = styled.header<{ $scrolled: boolean }>`
 `
 
 const Logo = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: ${({ theme }) => theme.fonts.mono};
   font-weight: 700;
   font-size: 0.95rem;
   color: ${({ theme }) => theme.colors.cyan};
+`
+
+const LogoImage = styled.img`
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  box-shadow: ${({ theme }) => theme.shadows.card};
 `
 
 const NavLinks = styled.nav`
@@ -59,7 +72,7 @@ const StatusWrap = styled.div`
 const links = [
   { href: '#about', label: 'about' },
   { href: '#projects', label: 'projects' },
-  { href: '#contact', label: 'contact' },
+  { href: '#path-visualizer', label: 'pathviz' },
 ]
 
 export function Header() {
@@ -74,6 +87,7 @@ export function Header() {
   return (
     <Nav $scrolled={scrolled}>
       <Logo href="#">
+        <LogoImage src={siteLogo} alt={`${portfolio.name} logo`} />
         {'<'}
         {portfolio.name}
         {' />'}

@@ -1,3 +1,5 @@
+import { projectLogos } from '../assets/projectLogos'
+
 export interface Project {
   id: string
   title: string
@@ -5,7 +7,7 @@ export interface Project {
   description: string
   tags: string[]
   status: 'live' | 'building' | 'archived'
-  /** Drop your logo in public/projects/ and set e.g. "/projects/boxyai.png" */
+  /** Add PNG to src/assets/ and wire it in projectLogos.ts */
   logo?: string
   links?: {
     demo?: string
@@ -37,9 +39,9 @@ export const portfolio: PortfolioData = {
   tagline: 'Building things that compile, scale, and occasionally spark joy.',
   description:
     'I design and ship software with a love for clean architecture, clever algorithms, and interfaces that feel alive. From low-level systems to polished frontends — I like the full stack.',
-  email: 'hello@example.com',
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
+  email: 'kcgandonou19@gmail.com',
+  github: 'https://github.com/kennethoo',
+  linkedin: 'https://www.linkedin.com/in/kennethgandonou/',
   skills: [
     'TypeScript',
     'React',
@@ -63,7 +65,7 @@ export const portfolio: PortfolioData = {
       'Always learning — currently diving deeper into systems & infra',
     ],
     funFacts: [
-      '☕ Best code happens after the second coffee',
+      '💧 Best code happens after some water and good music',
       '⚡ I measure success in milliseconds saved',
       '🛠 Side projects are my lab bench',
     ],
@@ -77,10 +79,10 @@ export const portfolio: PortfolioData = {
         "Know exactly what's in every box you own. Write a number on any box, scan it with BoxyAI, and turn messy storage into a live, searchable inventory powered by AI. Web + iOS — same account, scan in two taps, find anything in seconds.",
       tags: ['AI', 'iOS', 'Web', 'Inventory'],
       status: 'live',
-      logo: '/projects/boxyai.png',
+      logo: projectLogos.boxyai,
       links: {
-        app: '#',
-        demo: '#',
+        app: 'https://apps.apple.com/us/app/boxyai/id6753580882',
+        demo: 'https://boxyai.app',
       },
     },
     {
@@ -91,9 +93,9 @@ export const portfolio: PortfolioData = {
         'Floowguard is a control plane for product abuse: define policies in the dashboard, enforce them with a tiny SDK in your API, stream structured logs, and watch traffic roll up per workspace—without bolting on five different tools.',
       tags: ['SDK', 'API', 'Security', 'SaaS'],
       status: 'live',
-      logo: '/projects/floowguard.png',
+      logo: projectLogos.floowguard,
       links: {
-        demo: '#',
+        demo: 'https://floowguard.com/',
       },
     },
     {
@@ -104,9 +106,9 @@ export const portfolio: PortfolioData = {
         'Upload CSV or PDF statements and get instant money-in / money-out, top merchants, and clean reports—without connecting your bank. Clear monthly views, net cash flow at a glance, and insights into where you spent.',
       tags: ['FinTech', 'PDF', 'CSV', 'Analytics'],
       status: 'live',
-      logo: '/projects/spendio.png',
+      logo: projectLogos.spendio,
       links: {
-        demo: '#',
+        demo: 'https://spendioapp.com/',
       },
     },
     {
@@ -117,9 +119,9 @@ export const portfolio: PortfolioData = {
         'Create, schedule, join, and manage meetings from one place. Set availability, share booking links, track daily tasks, and cut no-shows with reminder emails. Calendar view, upcoming meetings, profiles, dark/light mode, and join via web—built for teams that live in their schedule.',
       tags: ['SaaS', 'Scheduling', 'Calendar', 'Web'],
       status: 'live',
-      logo: '/projects/meettum.png',
+      logo: projectLogos.meettum,
       links: {
-        demo: '#',
+        repo: 'https://github.com/meettum',
       },
     },
     {
@@ -130,10 +132,9 @@ export const portfolio: PortfolioData = {
         'React + TypeScript frontend for a modern Tic-Tac-Toe experience—real-time multiplayer tournaments with matchmaking, dynamic board sizing (3×3 up to 6×6), local and AI practice with minimax, live leaderboards, WebSocket gameplay, dark/light mode, and a responsive gaming UI.',
       tags: ['React', 'TypeScript', 'Socket.IO', 'Gaming', 'AI'],
       status: 'live',
-      logo: '/projects/morpionai.png',
+      logo: projectLogos.morpionai,
       links: {
-        demo: '#',
-        repo: '#',
+        repo: 'https://github.com/MorpionAi',
       },
     },
     {
@@ -144,22 +145,20 @@ export const portfolio: PortfolioData = {
         'A real-time collaborative coding environment where people write, run, and share code together. Built-in auth, live multi-user editing, and integrated video for remote technical interviews—pair programming and hiring in one place.',
       tags: ['WebRTC', 'Real-time', 'Collaboration', 'Interviews'],
       status: 'live',
-      logo: '/projects/meetcode.png',
       links: {
-        demo: '#',
+        repo: 'https://github.com/meettum/meetcode-web/tree/main',
       },
     },
     {
       id: 'auth-api',
       title: 'Auth API',
-      tagline: 'Production-ready authentication microservice',
+      tagline: 'Open-source authentication microservice',
       description:
         'Stateless JWT auth built with Node.js, Express, and MongoDB—register, login, token refresh, and secure logout. Password hashing, short-lived access tokens, refresh tokens in HTTP-only cookies, email verification with OTP, and health checks—ready to plug into any frontend.',
-      tags: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Microservice'],
+      tags: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Open Source'],
       status: 'live',
-      logo: '/projects/auth-api.png',
       links: {
-        repo: '#',
+        repo: 'https://github.com/kennethoo/auth-api',
       },
     },
   ],

@@ -172,7 +172,6 @@ export function Hero() {
           <Button $primary href="#projects">
             view_projects()
           </Button>
-          <Button href={`mailto:${portfolio.email}`}>contact_me()</Button>
         </Actions>
       </Content>
       <Visual>

@@ -138,7 +138,7 @@ export function About() {
   "name": "${name}",
   "role": "${title}",
   "passion": "building cool stuff",
-  "coffee_level": "critical",
+  "fuel": "water + good music",
   "open_to": ["collabs", "hard problems"]
 }`}</CodeBlock>
           <FunFacts>
