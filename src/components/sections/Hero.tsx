@@ -149,7 +149,6 @@ const Chip = styled.div`
 const terminalLines = [
   `whoami → ${portfolio.name}`,
   `role → ${portfolio.title}`,
-  `stack → ${portfolio.skills.slice(0, 4).join(' | ')}`,
   `status → ready_to_build()`,
 ]
 
