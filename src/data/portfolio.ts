@@ -163,5 +163,17 @@ export const portfolio: PortfolioData = {
         repo: 'https://github.com/kennethoo/auth-api',
       },
     },
+    {
+      id: 'codeexec',
+      title: 'CodeExec',
+      tagline: 'Open-source anonymous code execution',
+      description:
+        'A simple, secure Remote Code Execution service—run code in multiple languages through Docker-isolated containers. Each run gets its own sandbox with resource limits, no persistent storage, and containers destroyed after execution. No authentication required.',
+      tags: ['Docker', 'RCE', 'API', 'Sandbox', 'Open Source'],
+      status: 'live',
+      links: {
+        repo: 'https://github.com/kennethoo/CodeExec',
+      },
+    },
   ],
 }
